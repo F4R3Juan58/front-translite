@@ -21,17 +21,17 @@ Permite organizar rutas de carga/descarga, asignar conductores y vehículos, y g
 ## 🖼️ Capturas de pantalla
 
 ### Calendario de rutas
-![Calendario de rutas](<img width="1914" height="905" alt="calendar" src="https://github.com/user-attachments/assets/1d47149f-7f79-4708-a121-d79be12421e7" />)
+<img width="1914" height="905" alt="calendar" src="https://github.com/user-attachments/assets/74b3de79-bf3c-41d6-89a6-1f8cc07ed5d4" />
 
 ### Crear nueva ruta
-![Crear ruta](<img width="1916" height="908" alt="create-route" src="https://github.com/user-attachments/assets/ac2c5e1e-56b1-4317-ae1e-839967f4ba18" />)
-
+<img width="1916" height="908" alt="create-route" src="https://github.com/user-attachments/assets/af9a936d-0da2-4576-8f88-2c8d99d2d466" />
 
 ### Gestión de vehículos
-![Gestión de vehículos](<img width="1916" height="910" alt="vehicles" src="https://github.com/user-attachments/assets/3fb4980f-eed3-4c43-9c98-1ca52a86c07f" />)
+<img width="1916" height="910" alt="vehicles" src="https://github.com/user-attachments/assets/15289c9b-c83a-467d-9fbe-bd9683c0e6e0" />
 
 ### Gestión de empleados
-![Gestión de empleados](<img width="1919" height="903" alt="employees" src="https://github.com/user-attachments/assets/a1a49ffb-f1e3-4d21-8e9a-311ab35dcaec" />)
+<img width="1919" height="903" alt="employees" src="https://github.com/user-attachments/assets/778f4c70-20cb-41c4-a52c-22ff3fe1e8c4" />
+
 
 
 ---
