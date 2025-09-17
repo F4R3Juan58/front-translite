@@ -107,25 +107,6 @@ front-translite/
 
 ---
 
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas.  
-Pasos recomendados:
-
-1. Haz un **fork** del proyecto.  
-2. Crea una rama para tu feature/fix: `git checkout -b mi-feature`.  
-3. Realiza commits descriptivos.  
-4. Abre un Pull Request explicando los cambios.  
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **MIT**.  
-Consulta el archivo [LICENSE](./LICENSE) para más información.
-
----
-
 ## 👤 Autor
 
 **F4R3Juan58**  
