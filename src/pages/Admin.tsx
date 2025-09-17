@@ -330,11 +330,6 @@ export default function Admin({ onNewRoute, onGoEmployees, onGoVehicles }: Props
           <h2 className="text-xl font-semibold">Calendario de rutas</h2>
           <div className="text-xs text-muted-foreground">Empresa #{user?.companyId} · {user?.email}</div>
         </div>
-        <div className="flex gap-2">
-          <Button variant="secondary" onClick={onGoVehicles}>Vehículos</Button>
-          <Button variant="secondary" onClick={onGoEmployees}>Empleados</Button>
-          <Button onClick={onNewRoute}><Plus className="h-4 w-4" /> Nueva ruta</Button>
-        </div>
       </div>
 
       {/* Controles calendario */}
