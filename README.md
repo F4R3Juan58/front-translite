@@ -1,69 +1,130 @@
-# React + TypeScript + Vite
+# TransLite – MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para la **gestión de rutas y entregas** en empresas de transporte.  
+Permite organizar rutas de carga/descarga, asignar conductores y vehículos, y gestionar empleados desde una interfaz sencilla y moderna.
 
-Currently, two official plugins are available:
+🔗 **Demo en producción**: [TransLite – Vercel](https://front-translite-bhny.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Características principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📅 **Calendario de rutas**: consulta diaria de las rutas programadas.  
+- ➕ **Creación de rutas**: define empresa, puntos de carga/descarga, bultos, fechas y asigna transportes.  
+- 🚚 **Gestión de vehículos**: registro de marca, modelo y matrícula.  
+- 👨‍💼 **Gestión de empleados**: alta de administradores y conductores, con datos de contacto y permisos.  
+- 🔒 **Autenticación**: inicio/cierre de sesión para el panel de administración.  
+- ⚡ **Interfaz responsive** desarrollada con **React + TypeScript + Vite** y estilizada con **Tailwind CSS**.  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🖼️ Capturas de pantalla
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Calendario de rutas
+![Calendario de rutas](./docs/screens/calendar.png)
+
+### Crear nueva ruta
+![Crear ruta](./docs/screens/create-route.png)
+
+### Gestión de vehículos
+![Gestión de vehículos](./docs/screens/vehicles.png)
+
+### Gestión de empleados
+![Gestión de empleados](./docs/screens/employees.png)
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **React** (con hooks y componentes funcionales)  
+- **TypeScript**  
+- **Vite** como bundler y servidor de desarrollo  
+- **Tailwind CSS** para estilos  
+- **ESLint** + **TypeScript config** para buenas prácticas  
+
+---
+
+## 🚀 Instalación y uso
+
+```bash
+# Clonar repositorio
+git clone https://github.com/F4R3Juan58/front-translite.git
+
+# Entrar al directorio
+cd front-translite
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor en modo desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Previsualizar build de producción
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Variables de entorno
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
+
+```env
+# Ejemplo
+VITE_API_URL=http://localhost:4000
 ```
+
+> ⚠️ Ajusta según la URL real de tu backend/API.
+
+---
+
+## 📂 Estructura del proyecto
+
+```
+front-translite/
+├── public/               # Archivos estáticos
+├── src/
+│   ├── assets/           # Imágenes, logos
+│   ├── components/       # Componentes reutilizables
+│   ├── pages/            # Páginas principales (Rutas, Vehículos, Empleados)
+│   ├── hooks/            # Hooks personalizados
+│   ├── services/         # Conexión a APIs
+│   ├── utils/            # Funciones auxiliares
+│   ├── App.tsx           # Punto de entrada de la app
+│   └── main.tsx          # Renderizado raíz
+├── .env                  # Variables de entorno
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas.  
+Pasos recomendados:
+
+1. Haz un **fork** del proyecto.  
+2. Crea una rama para tu feature/fix: `git checkout -b mi-feature`.  
+3. Realiza commits descriptivos.  
+4. Abre un Pull Request explicando los cambios.  
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**.  
+Consulta el archivo [LICENSE](./LICENSE) para más información.
+
+---
+
+## 👤 Autor
+
+**F4R3Juan58**  
+🔗 GitHub: [@F4R3Juan58](https://github.com/F4R3Juan58)  
